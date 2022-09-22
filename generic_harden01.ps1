@@ -1,3 +1,19 @@
+new-item "hklm:\\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer"
+new-item "hklm:\\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services"
+new-item "hklm:\\SOFTWARE\Policies\Microsoft\Windows\Explorer"
+new-item "hklm:\\SOFTWARE\Policies\Microsoft\Windows\Installer"
+new-item "hklm:\\SYSTEM\CurrentControlSet\Control\Lsa"
+new-item "hklm:\\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters"
+new-item "hklm:\\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile"
+new-item "hklm:\\SYSTEM\CurrentControlSet\Services\mrxsmb10"
+new-item "hklm:\\SOFTWARE\policies\Microsoft\office\16.0\common\officeupdate"
+new-item "hklm:\\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
+new-item "hklm:\\SOFTWARE\Policies\Microsoft\Windows\Network Connections"
+new-item "hklm:\\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp"
+new-item "hklm:\\Software\Policies\Microsoft\Windows Defender\Real-Time Protection"
+new-item "hklm:\\Software\Policies\Microsoft\Edge"
+new-item "hklm:\\Software\Policies\Microsoft\Internet Explorer\Main"
+
 New-ItemPropertyProperty -Path "hklm:\\SOFTWARE\Policies\Microsoft\Windows\Installer" -name AlwaysInstallElevated -Value 0 -Force
 
 New-ItemPropertyProperty "hklm:\\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -name NoDriveTypeAutoRun -Value 255 -Force
