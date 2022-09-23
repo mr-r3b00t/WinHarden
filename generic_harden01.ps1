@@ -84,3 +84,5 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan $true -Force
 New-ItemProperty "hklm:\\Software\Policies\Microsoft\Edge" -name HideFirstRunExperience -Value 1 -Force
 
 New-ItemProperty "hklm:\\Software\Policies\Microsoft\Internet Explorer\Main" -Name DisableFirstRunCustomize -Value 1 -Force
+
+New-ItemProperty "HKLM:\\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" -name RequireSecuritySignature -value 1 -Force
